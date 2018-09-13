@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
     style from bootstarp framework
     -->
 
-    <nav class='navbar navbar-expand navbar-light bg-light'> 
+    <nav class='navbar navbar-expand navbar-light bg-light'>
       <a class='navbar-brand'>{{pageTitle}}</a>
 
       <ul class ='nav nav pills'>
@@ -32,6 +32,6 @@ import { Component } from '@angular/core';
 })
 
 export class AppComponent {
-  pageTitle: string = `Acme Product Mangement`;
+  pageTitle = `Acme Product Mangement`;
   title = 'Angular: Getting Started';
 }

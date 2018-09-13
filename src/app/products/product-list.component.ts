@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core'
+import { Component, OnInit } from '@angular/core';
 import { IProduct } from './product';
 import { ProductService } from './product.service';
 
@@ -11,12 +11,12 @@ export class ProductListComponent implements OnInit {
 
     errorMessage: string;
 
-    pageTitle: string = 'Product List';
+    pageTitle = 'Product List';
 
-    imageWidth: number = 50;
-    imageMargin: number = 2;
+    imageWidth = 50;
+    imageMargin = 2;
 
-    showImage: boolean = false;
+    showImage = false;
 
     _listFilter: string;
     get listFilter(): string {
@@ -37,7 +37,7 @@ export class ProductListComponent implements OnInit {
         filterBy = filterBy.toLocaleLowerCase();
 
         return this.products.filter((product: IProduct) =>
-            product.productName.toLocaleLowerCase().indexOf(filterBy) !== -1)
+            product.productName.toLocaleLowerCase().indexOf(filterBy) !== -1);
     }
 
     onRatingClicked(message: string): void {
@@ -46,17 +46,17 @@ export class ProductListComponent implements OnInit {
 
     constructor(private productService: ProductService) {
     }
-    
+
     ngOnInit(): void {
         this.productService.getProducts().subscribe(
             products => {
-                this.products = products; 
+                this.products = products;
                 this.filteredProducts = this.products;
-            }, 
+            },
             error => this.errorMessage = error,
         );
 
-        console.log("in ngOnInit");
+        console.log('in ngOnInit');
     }
 
     toggleImage(): void {

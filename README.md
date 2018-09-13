@@ -27,19 +27,28 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 
 
+## HTML
+product?.productName
+[(ngModel)] = 'product?.name' // not working in HTML
+
 ## -- -- --
 ## npm command
 
 cntr + C or cmd + C stop running project 
 
-//install angular globaly
+// install angular globaly
 npm install -g @angular/cli
 
-//create component 
-ng g c path --flat 
+// create component 
+ng g c path/name --flat 
 g - generate 
 c - component 
 --flat - will not create additional folder
 
-//run project on other port
+// run project on other port
 ng serve --port 4402 
+
+// create guard
+ng g g path/name
+g - generate 
+g - guard
