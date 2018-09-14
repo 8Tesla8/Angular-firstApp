@@ -59,7 +59,7 @@ g - generate
 m - module
 
 // import module
-ng g m path/name --flat -m moduleName
+ng g m path/name --flat -m path/moduleName
 g - generate
 m - modul
 --flat - not create folder

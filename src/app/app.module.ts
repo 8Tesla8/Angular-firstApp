@@ -24,7 +24,7 @@ import { ProductModule } from './products/product.module';
     WelcomeComponent
   ],
 
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent] // declare root module
 })
 
 export class AppModule { }
