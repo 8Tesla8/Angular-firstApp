@@ -52,3 +52,17 @@ ng serve --port 4402
 ng g g path/name
 g - generate 
 g - guard
+
+// create module
+ng g m path/name
+g - generate
+m - module
+
+// import module
+ng g m path/name --flat -m moduleName
+g - generate
+m - modul
+--flat - not create folder
+-m - import module in module(name)
+
+
