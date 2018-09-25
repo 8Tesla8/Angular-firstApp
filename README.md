@@ -27,17 +27,36 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 
 
+
 ## HTML
 product?.productName
 [(ngModel)] = 'product?.name' // not working in HTML
 
+## package.json
+"scripts" have some commands
+
+
 ## -- -- --
 ## npm command
+// clean terminal
+cls
 
 cntr + C or cmd + C stop running project 
 
 // install angular globaly
 npm install -g @angular/cli
+g - globaly
+
+// angular help
+ng help
+
+// show help about command
+ng commandName --help
+
+// create new angular appliacation
+ng new projectName
+ng new projectName --prefix name
+angular.json have a prefix
 
 // create component 
 ng g c path/name --flat 
@@ -45,8 +64,14 @@ g - generate
 c - component 
 --flat - will not create additional folder
 
-// run project on other port
+// run project
+npm start
+ng serve 
+// run project on specific port
 ng serve --port 4402 
+// run project and open it in default browser
+ng serve -o
+o - open flag, open in default browser 
 
 // create guard
 ng g g path/name
@@ -65,4 +90,13 @@ m - modul
 --flat - not create folder
 -m - import module in module(name)
 
+
+// run test
+ng test
+ng e2e
+
+// prepare your application for deployment, this command will create dist folder
+ng build
+ng build --prod 
+prod - do not generate map file
 
